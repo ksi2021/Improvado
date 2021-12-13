@@ -31,8 +31,8 @@ print("=" * 72)
 
 
 def sort_by_alphabet(element):
-    return element['first_name'][0]
-
+    # return element['first_name'][0]
+    return element['first_name']
 
 for i in range(len(friends)):
     if friends[i]['bdate']:
@@ -43,7 +43,9 @@ for i in range(len(friends)):
             friends[i]['bdate'] = iso_date
 
 friends.sort(key=sort_by_alphabet)
-
+for i in friends:
+    print(i['first_name'])
+exit()
 file_type = input(f"select one type of {types} \t")
 print("=" * 72)
 file_name = input("Введите путь к файлу или название файла для создания в этой директории \t")
