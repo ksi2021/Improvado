@@ -53,7 +53,7 @@ int main()
             distance/=1000;
             break;
         case 2:
-            
+            distance /= 1067
             break;
         default:
             break;
